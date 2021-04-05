@@ -156,7 +156,7 @@ ids = {
     'Á':  '80',  'É':  '81',  'Í':  '82',  'Ó':  '83'
 }
 
-config_adicional_padrao = 'SaidaSala: 0, TRescueKit: true, RescueKit: false'
+config_adicional_padrao = ', SaidaSala: 0, TRescueKit: true, RescueKit: false'
 
 # Não utilizado ainda
 linha_inferior = [
