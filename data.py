@@ -1,4 +1,5 @@
 retas_convertidas = {
+    '71':   '0',    # Ladrilho vazio
     '75':   '38',   # Ladrilho de início
     '77':   '37',   # Ladrilho de início com paredes
     '76':   '36',   # Ladrilho de início sem linha
