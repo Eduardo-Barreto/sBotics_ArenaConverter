@@ -9,18 +9,19 @@ def converter_arena(arena_antiga):
         if parte[0].isnumeric():
             if len(parte) > 2:
                 peca = parte
-                xy = peca[0:4]
-                xy = xy[::-1]
+                x = peca[0:2]
+                y = peca[2:4]
+                xy = x[::-1] + y[::-1]
                 tipo = peca[4:5]
                 identificador = peca[5:6]
                 id_convertido = ids.get(identificador)
                 rotacao = peca[6:]
                 if rotacao == '000':
-                    rotacao = '2'
+                    rotacao = '0'
                 elif rotacao == '090':
                     rotacao = '1'
                 elif rotacao == '180':
-                    rotacao = '0'
+                    rotacao = '2'
                 else:
                     rotacao = '3'
 
@@ -54,7 +55,8 @@ def converter_arena(arena_antiga):
                 tipo_resgate = parte
                 arena_final += f' {tipo_resgate}, '
         else:
-            variavel = parte
+            variavel = parte + ','
             arena_final += variavel
+    arena_final = arena_final.strip(',')
     arena_final += config_adicional_padrao
-    return arena_final.strip(',')
+    return arena_final
