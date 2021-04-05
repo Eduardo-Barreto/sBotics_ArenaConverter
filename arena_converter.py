@@ -1,3 +1,4 @@
+import os
 from data import *
 
 def converter_arena(arena_antiga):
@@ -15,6 +16,8 @@ def converter_arena(arena_antiga):
                 xy = x[::-1] + y[::-1]
                 tipo = peca[4:5]
                 identificador = peca[5:6]
+                if identificador == ')':
+                  continue
                 id_convertido = ids.get(identificador)
                 rotacao = peca[6:]
                 if rotacao == '000':
@@ -61,3 +64,10 @@ def converter_arena(arena_antiga):
     arena_final = arena_final.strip(',')
     arena_final += config_adicional_padrao
     return arena_final
+
+print('Cole o código da arena antiga:')
+arena_antiga = input()
+arena_convertida = converter_arena(arena_antiga)
+os.system('clear')
+print('Arena convertida:\n')
+print(arena_convertida)
