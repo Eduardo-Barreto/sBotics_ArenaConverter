@@ -1,8 +1,8 @@
 from data import *
 
 def converter_arena(arena_antiga):
+    arena_antiga = arena_antiga.strip('\n')
     arena_antiga = arena_antiga.split(',')
-    arena_antiga = arena_antiga.split('\n')
     arena_final = ''
 
     for parte in arena_antiga:
