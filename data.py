@@ -1,5 +1,4 @@
 retas_convertidas = {
-    '71':   '0',    # Ladrilho vazio
     '75':   '38',   # Ladrilho de início
     '77':   '37',   # Ladrilho de início com paredes
     '76':   '36',   # Ladrilho de início sem linha
@@ -165,3 +164,28 @@ linha_inferior = [
     '38', '40', '42', '44', '46', '48',
     '53', '59', '61', '62', '65', '70'
 ]
+
+configs = {
+    'HoraDoDia':    'time_of_day',
+    'TempoMxmo':    'time_limit',
+    'SaveMrcds':    'number_of_checkpoints',
+    'ObstacTmp':    'obstacle_dodging_time',
+    'MoveObsto':    'obstacle_pushing',
+    'RescueKit':    'rescue_kit_enabled',
+    'BoolTpFim':    'time_limit_stops_code_execution',
+    'BoolEndCd':    'finish_execution_after_code',
+    'PontoDist':    'distance_based_checkpoint_scoring',
+    'RbCpJrScr':    'standard_robocup_jr_scoring',
+    'BoolTSala':    'level_two_evacuation_point',
+    'Descricao':    'description',
+    'BoolPrgso':    'lack_of_progress',
+    'LRescueKt':    'level_two_rescue_kit',
+    'BoolSlnha':    'robot_has_to_follow_line'
+}
+
+configs_resgate = {
+    'VtmsVivas':    'live_victims',
+    'VtmsMrtas':    'dead_victims',
+    'SaidaSala':    'exit',
+    'ResgtePos':    'point_position',
+}
